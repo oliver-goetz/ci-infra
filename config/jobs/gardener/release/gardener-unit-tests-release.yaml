@@ -13,6 +13,7 @@ presubmits:
       timeout: 40m
       grace_period: 10m
     annotations:
+      fork-per-release: "true"
       description: Runs unit tests for gardener releases in pull requests
     spec:
       containers:
@@ -48,6 +49,7 @@ postsubmits:
       timeout: 40m
       grace_period: 10m
     annotations:
+      fork-per-release: "true"
       description: Runs unit tests for gardener releases when merging
       testgrid-dashboards: gardener-gardener
       testgrid-days-of-results: "60"
