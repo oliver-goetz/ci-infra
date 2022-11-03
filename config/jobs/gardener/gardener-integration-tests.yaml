@@ -10,6 +10,7 @@ presubmits:
       timeout: 20m
       grace_period: 10m
     annotations:
+      fork-per-release: "true"
       description: Runs integration tests for gardener developments in pull requests
     spec:
       containers:
@@ -38,6 +39,7 @@ periodics:
     timeout: 20m
     grace_period: 10m
   annotations:
+    fork-per-release: "true"
     description: Runs integration tests for gardener developments periodically
     testgrid-dashboards: gardener-gardener
     testgrid-days-of-results: "60"

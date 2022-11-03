@@ -6,6 +6,7 @@ presubmits:
     skip_branches:
     - release-v\d+.\d+ # don't run on release branches for now (add a job per branch later)
     annotations:
+      fork-per-release: "true"
       description: Verify gardener image build on pull requests to master branch
     decorate: true
     spec:
@@ -27,6 +28,7 @@ presubmits:
     skip_branches:
     - release-v\d+.\d+ # don't run on release branches for now (add a job per branch later)
     annotations:
+      fork-per-release: "true"
       description: Publish gardener development images on pull requests
     decorate: true
     optional: true

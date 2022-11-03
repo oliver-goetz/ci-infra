@@ -13,6 +13,7 @@ presubmits:
       preset-dind-enabled: "true"
       preset-kind-volume-mounts: "true"
     annotations:
+      fork-per-release: "true"
       description: Runs control plane migration end-to-end tests for gardener developments in pull requests
     spec:
       containers:
@@ -50,6 +51,7 @@ periodics:
     preset-dind-enabled: "true"
     preset-kind-volume-mounts: "true"
   annotations:
+    fork-per-release: "true"
     description: Runs control plane migration end-to-end tests for gardener developments periodically
     testgrid-dashboards: gardener-gardener
     testgrid-days-of-results: "60"

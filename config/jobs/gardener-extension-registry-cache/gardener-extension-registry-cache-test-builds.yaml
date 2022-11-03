@@ -4,6 +4,7 @@ presubmits:
     cluster: gardener-prow-build
     always_run: true
     annotations:
+      fork-per-release: "true"
       description: Verify Gardener extension registry-cache image build on pull requests
     decorate: true
     spec:

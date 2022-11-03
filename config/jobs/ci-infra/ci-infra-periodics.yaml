@@ -76,6 +76,38 @@ periodics:
       secret:
         secretName: github-token
 
+- cron: "50 * * * *"
+  name: ci-job-forker-test
+  cluster: gardener-prow-trusted
+  decorate: true
+  annotations:
+    description: Job-Forker Test
+    testgrid-create-test-group: "false"
+  reporter_config:
+    slack:
+      channel: prow-alerts
+  spec:
+    containers:
+    - image: ghcr.io/oliver-goetz/test-infra/job-forker:latest
+      command:
+      - /job-forker
+      args:
+      - --github-token-path=/etc/github-token/token
+      - --github-endpoint=http://ghproxy
+      - --github-endpoint=https://api.github.com
+      - --dry-run=false
+      - --job-directory=config/jobs/gardener
+      - --upstream-repository=oliver-goetz/ci-infra
+      - --upstream-branch=test-job-forker
+      volumeMounts:
+      - name: github-token
+        mountPath: /etc/github-token
+        readOnly: true
+    volumes:
+    - name: github-token
+      secret:
+        secretName: github-token
+
 - cron: "30 * * * 1-5"
   name: ci-prow-autobump
   cluster: gardener-prow-trusted

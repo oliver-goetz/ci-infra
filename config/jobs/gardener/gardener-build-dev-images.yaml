@@ -6,6 +6,7 @@ postsubmits:
     branches:
     - ^master$
     annotations:
+      fork-per-release: "true"
       description: Gardener development image build on master branch
       testgrid-dashboards: gardener-gardener
       testgrid-days-of-results: "60"

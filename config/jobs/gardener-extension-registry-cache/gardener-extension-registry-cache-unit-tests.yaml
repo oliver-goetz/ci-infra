@@ -8,6 +8,7 @@ presubmits:
       timeout: 40m
       grace_period: 10m
     annotations:
+      fork-per-release: "true"
       description: Runs unit tests for Gardener extension registry-cache developments in pull requests
     spec:
       containers:
@@ -40,6 +41,7 @@ periodics:
     timeout: 40m
     grace_period: 10m
   annotations:
+    fork-per-release: "true"
     description: Runs unit tests for Gardener extension registry-cache developments periodically
     testgrid-dashboards: gardener-extension-registry-cache
     testgrid-days-of-results: "60"
