@@ -99,6 +99,8 @@ periodics:
       - --job-directory=config/jobs/gardener
       - --upstream-repository=oliver-goetz/ci-infra
       - --upstream-branch=test-job-forker
+      - --recursive=true
+      - --override-labels=test,skip
       volumeMounts:
       - name: github-token
         mountPath: /etc/github-token
