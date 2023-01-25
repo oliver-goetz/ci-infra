@@ -250,7 +250,7 @@ tide:
   #   - do-not-merge/work-in-progress
   #   - needs-rebase
   #   - "cla: no"
-  #   milestone: v1.63
+  #   milestone: v1.62
   #   includedBranches:
   #   - master
   # <-- /end: gardener-gardener-milestone -->
