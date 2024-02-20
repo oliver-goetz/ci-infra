@@ -1041,6 +1041,8 @@ k8s.io/kube-openapi v0.0.0-20230308215209-15aac26d736a h1:gmovKNur38vgoWfGtP5QOG
 k8s.io/kube-openapi v0.0.0-20230308215209-15aac26d736a/go.mod h1:y5VtZWM9sHHc2ZodIH/6SHzXj+TPU5USoA8lcIeKEKY=
 k8s.io/test-infra v0.0.0-20231207013618-edb02f8e2214 h1:LavXCly/3sSpbwjGt8uyTPfQV6ErfEOHVkvA3Iih2OA=
 k8s.io/test-infra v0.0.0-20231207013618-edb02f8e2214/go.mod h1:PRrlRtuMkCVpIgG+0AABZukfDM3ASJg8jZZyUChVdAs=
+k8s.io/test-infra v0.0.0-20240220193835-1c9ab5cbae5a h1:LyERexfisnaqbThghCkLVIfjtDcb9aDolcgvvhlquHc=
+k8s.io/test-infra v0.0.0-20240220193835-1c9ab5cbae5a/go.mod h1:2eoHxXPfRvETWWaYJlV3fqdDJq6PGdr2Ia2nyhmLu4I=
 k8s.io/utils v0.0.0-20230209194617-a36077c30491 h1:r0BAOLElQnnFhE/ApUsg3iHdVYYPBjNSSOMowRZxxsY=
 k8s.io/utils v0.0.0-20230209194617-a36077c30491/go.mod h1:OLgZIPagt7ERELqWJFomSt595RzquPNLL48iOWgYOg0=
 knative.dev/pkg v0.0.0-20230221145627-8efb3485adcf h1:TwvZFDpkyqpK2OCAwvNGV2Zjk14FzIh8X8Ci/du3jYI=
