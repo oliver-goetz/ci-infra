@@ -4,6 +4,7 @@
       "config:best-practices"
     ],
     "labels": ["kind/enhancement"],
+    "postUpdateOptions": ["gomodTidy"],
     "customManagers": [
       {
         "customType": "regex",
@@ -82,6 +83,14 @@
           ],
           "executionMode": "branch"
         }
+      },
+      {
+        "matchDatasources": ["go"],
+        "matchPackagePatterns": [
+          "k8s\\.io\/(api|apimachinery|client-go)",
+          "sigs\\.k8s\\.io\/controller-runtime"
+        ],
+        "enabled": false
       }
     ]
   }
