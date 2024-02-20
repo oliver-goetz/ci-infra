@@ -420,8 +420,8 @@ github.com/prometheus/procfs/internal/util
 ## explicit; go 1.13
 github.com/prometheus/statsd_exporter/pkg/mapper
 github.com/prometheus/statsd_exporter/pkg/mapper/fsm
-# github.com/shurcooL/githubv4 v0.0.0-20210725200734-83ba7b4c9228
-## explicit
+# github.com/shurcooL/githubv4 v0.0.0-20240120211514-18a1ae0e79dc
+## explicit; go 1.19
 github.com/shurcooL/githubv4
 # github.com/shurcooL/graphql v0.0.0-20181231061246-d48a9a75455f
 ## explicit
