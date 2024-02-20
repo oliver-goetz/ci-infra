@@ -17,7 +17,7 @@ require (
 	k8s.io/apimachinery v0.26.5
 	k8s.io/client-go v0.25.9
 	k8s.io/test-infra v0.0.0-20231207013618-edb02f8e2214
-	sigs.k8s.io/controller-runtime v0.12.3
+	sigs.k8s.io/controller-runtime v0.17.2
 	sigs.k8s.io/yaml v1.3.0
 )
 
