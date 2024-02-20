@@ -1,7 +1,7 @@
 # ----------------
 # Build container
 # ----------------
-FROM golang:1.22.0 AS builder
+FROM golang:1.21.5 AS builder
 ARG GOPROXY=https://proxy.golang.org,direct
 ENV GOPROXY=$GOPROXY
 LABEL stage=intermediate
@@ -18,7 +18,7 @@ RUN mkdir /build && GOBIN=/build \
 
 FROM gcr.io/distroless/static-debian12:nonroot AS base_nonroot
 
-FROM alpine:3.19.1 AS ssl_git_runner
+FROM alpine:3.19.0 AS ssl_git_runner
 # Install SSL ca certificates
 RUN apk add --no-cache ca-certificates git
 # Create nonroot user and group to be used in executable containers
