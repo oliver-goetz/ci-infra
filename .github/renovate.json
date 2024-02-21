@@ -24,6 +24,7 @@
         "datasourceTemplate": "github-releases"
       }
     ],
+    "separateMinorPatch": true,
     "packageRules": [
       {
         "groupName": "update: athens",
@@ -90,6 +91,12 @@
           "k8s\\.io\/(api|apimachinery|client-go)",
           "sigs\\.k8s\\.io\/controller-runtime"
         ],
+        "enabled": false
+      },
+      {
+        "matchDatasources": ["docker"],
+        "matchUpdateTypes": ["major", "minor"],
+        "matchPackagePatterns": ["grafana/grafana"],
         "enabled": false
       }
     ]
